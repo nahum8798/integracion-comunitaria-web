@@ -47,6 +47,24 @@ public class Provider {
     @Column(name = "id_userupdate")
     private Integer idUserUpdate;
 
+
+    public Provider(String name, String address, Float gpsLat, Float gpsLong, String typeProvider, String category,
+                    Integer gradeProvider, String availability, Integer idUserCreate, Integer idUserUpdate) {
+        this.name = name;
+        this.address = address;
+        this.gpsLat = gpsLat;
+        this.gpsLong = gpsLong;
+        this.typeProvider = typeProvider;
+        this.category = category;
+        this.gradeProvider = gradeProvider;
+        this.availability = availability;
+        this.idUserCreate = idUserCreate;
+        this.idUserUpdate = idUserUpdate;
+    }
+
+    public Provider() {
+    }
+
     // Getters y Setters
     public Integer getId() {
         return id;
